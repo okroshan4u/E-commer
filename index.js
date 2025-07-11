@@ -31,7 +31,7 @@ app.get("/", (req, res) => {
 
 // Multer Storage Setup
 const storage = multer.diskStorage({
-  destination: './upload/images', // Ensure this directory exists
+  destination: './upload/images', 
   filename: (req, file, cb) => {
     const uniqueSuffix = `${Date.now()}-${Math.round(Math.random() * 1E9)}`;
     cb(null, `${file.fieldname}-${uniqueSuffix}${path.extname(file.originalname)}`);
