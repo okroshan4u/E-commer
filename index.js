@@ -29,7 +29,7 @@ app.get("/", (req, res) => {
   res.send("Express App is running...");
 });
 
-// Multer Storage Set
+// Multer Storage
 const storage = multer.diskStorage({
   destination: './upload/images', 
   filename: (req, file, cb) => {
