@@ -1,7 +1,7 @@
 // routes/upload.js
 const express = require('express');
 const router = express.Router();
-const upload = require('../middleware/multer'); // your multer file
+const upload = require('../middleware/multer'); // your multer file hwew
 const cloudinary = require('../utils/cloudinary'); // your Cloudinary config
 const streamifier = require('streamifier');
 
